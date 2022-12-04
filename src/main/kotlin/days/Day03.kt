@@ -27,6 +27,6 @@ class Day03 : Day(3) {
     }
 
     private fun elfVal(input: Char): Int {
-        return if (input.isUpperCase()) input.code.toByte().toInt() - 38 else input.code.toByte().toInt() - 96
+        return if (input.isUpperCase()) input.code - 38 else input.code - 96
     }
 }
